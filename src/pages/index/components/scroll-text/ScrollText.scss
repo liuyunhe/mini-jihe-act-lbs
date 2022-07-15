@@ -1,0 +1,42 @@
+.text-wrapper {
+  padding: 6px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  line-height: 1;
+  font-size: 0;
+  // background-color: yellow;
+  background: rgba($color: #ffffff, $alpha: .7);
+  display: flex;
+  align-items: center;
+  .text-box{
+    width: 90%;
+    overflow: hidden;
+  }
+  .text-container {
+    width: 90%;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: top;
+    color: #28a878;
+    white-space: nowrap;
+
+  }
+  .scroll-icon{
+    margin-left: 8px;
+  }
+}
+.scroll{
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translate3d(130%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-160%, 0, 0);
+  }
+}

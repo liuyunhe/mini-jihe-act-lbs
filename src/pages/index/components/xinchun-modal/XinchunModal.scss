@@ -1,0 +1,77 @@
+.xinchun-modal-container {
+  position: relative;
+  width: 571px;
+  height: 646px;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: #005E6A;
+  transform: translateY(-80px);
+
+  .modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 15px;
+    top: 60px;
+  }
+
+  .modal-body {
+    text-align: justify;
+    padding-bottom: 120px;
+    padding: 120px 50px 0 87px;
+    max-height: 580px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transform: translateY(320px);
+    text-align: center;
+    margin-top: 86px;
+    &.single{
+      .icon-box{
+        margin-top: 52px;
+        justify-content: center;
+      }
+      .award-box{
+        margin-top: 38px;
+      }
+      .btn-get{
+        margin-top: 250px;
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .icon-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 86px;
+
+      .icon-building {
+        min-width: 166px;
+        min-height: 166px;
+        // background: white;
+      }
+    }
+    .award-box {
+      color: #084439;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1;
+      margin-top: 120px;
+      text-align: center;
+    }
+    .btn-get{
+      width: 306px;
+      position: relative;
+      top: -280px;
+    }
+    .btn-known {
+      width: 306px;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+}

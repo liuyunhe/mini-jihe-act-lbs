@@ -1,0 +1,60 @@
+.xianzi-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+
+  image,
+  img {
+    position: absolute;
+
+
+  }
+
+  .tips-xianzi {
+    width: 222px;
+    height: 291px;
+    left: 64px;
+    bottom: 281px;
+  }
+
+  .box-xianzi {
+    width: 381px;
+    height: 221px;
+    right: 79px;
+    bottom: 317px;
+  }
+
+  .know-btn,
+  .pk-btn {
+    width: 197px;
+    height: 65px;
+    left: 382px;
+    bottom: 197px;
+  }
+
+  .tips-text {
+    width: 300px;
+    height: 220px;
+    position: absolute;
+    left: 350px;
+    bottom: 300px;
+    font-size: 24px;
+    overflow-y: auto;
+    text-align: justify;
+    color: #084439;
+    .keyword{
+      color: #B60005;
+      font-weight: bold;
+    }
+  }
+}
+.jump{
+  animation: jump 1.5s infinite ease-in-out alternate
+}
+@keyframes jump{
+  from {transform: translate3d(0,10px,0);}
+  to {transform: translate3d(0,-30px,0);}
+}

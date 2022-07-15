@@ -1,0 +1,49 @@
+@import '@/style/common.scss';
+.user-info-box {
+  position: relative;
+  background: rgba($color: $secondary-color, $alpha: 0.7);
+  border-radius: 50px;
+
+  .avatar,
+  .nickname {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .avatar {
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    border: 8px solid rgba($color: $secondary-color, $alpha: 0.7);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .avatar-img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  .nickname {
+    line-height: 1;
+    padding: 14px 12px 14px 100px;
+  }
+  &.left{
+    .avatar{
+      left: -10px;
+    }
+  }
+  &.right{
+    .avatar{
+      right: -10px;
+    }
+    .nickname{
+      padding: 12px 90px 12px 12px;
+    }
+  }
+}

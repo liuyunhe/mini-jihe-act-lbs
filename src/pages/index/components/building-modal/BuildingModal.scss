@@ -1,0 +1,117 @@
+@import '@/style/common.scss';
+
+.building-modal-container {
+  position: relative;
+  width: 676px;
+  height: 914px;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: white;
+  transform: translateY(-0px);
+
+  &.choose {
+    width: 627px;
+    height: 738px;
+    transform: translateY(40px);
+    .modal-body {
+      padding: 14px 0px 0px 102px;
+      transform: translateY(90px);
+    }
+
+    .btn-next {
+      bottom: -220px !important;
+    }
+  }
+
+  .modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 10px;
+
+  }
+
+  .modal-body {
+    position: relative;
+    text-align: justify;
+    padding-bottom: 120px;
+    padding: 14px 52px 0px 126px;
+    max-height: 580px;
+    // overflow-y: auto;
+    box-sizing: border-box;
+    transform: translateY(170px);
+    // margin-top: 66px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .building-box {
+      height: 480px;
+      overflow-y: auto;
+      padding-top: 20px;
+      box-sizing: border-box;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .building-item {
+        position: relative;
+        display: inline-block;
+        margin-right: 58px;
+        margin-bottom: 67px;
+        width: 189px;
+        height: 189px;
+
+        .building-image {
+          width: 100%;
+          height: 100%;
+          background: white;
+        }
+
+        .count-box {
+          position: absolute;
+          display: inline-block;
+          width: 61px;
+          height: 61px;
+          border-radius: 50%;
+          background: $primary-color;
+          color: white;
+          font-size: 40px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 1;
+          box-sizing: border-box;
+          padding: 10px;
+          transform: translateX(-50%);
+          left: 50%;
+          bottom: -30px;
+        }
+
+        .radio-box {
+          display: inline-block;
+          position: absolute;
+          right: -8px;
+          top: -8px;
+        }
+      }
+    }
+
+    .no-data {
+      padding-top: 100rpx;
+      text-align: center;
+      padding-right: 70px;
+    }
+
+    .btn-next {
+      position: absolute;
+      width: 276px;
+      bottom: -180px;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+}

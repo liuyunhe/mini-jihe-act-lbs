@@ -1,0 +1,227 @@
+.result-modal-container {
+  position: relative;
+  width: 464px;
+  height: 556px;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: white;
+  // transform: translateY(50px);
+  text-align: center;
+  margin: 0 auto;
+
+  &.no-award {
+    // width: 496px;
+    // height: 609px;
+
+    .modal-bg {
+      // left: 36px!important;
+      width: 284px !important;
+      height: 439px !important;
+      margin-bottom: 30px;
+      // height: 559px!important;
+      &.xianzi{
+      width: 538px!important;
+      height: 435px!important;
+      margin-left: -40px;
+      }
+    }
+
+    .modal-body {
+      // transform: translate(56rpx, 212rpx);
+    }
+
+    .btn-know {
+      // transform: translateX(-65%)!important;
+      margin-top: 50px;
+    }
+
+    .award-box {
+      // left: -40px
+      // margin-top: -50px;
+      width: 470px;
+      height: 60px;
+      background-size: 100%;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .modal-bg {
+    // position: absolute;
+    width: 283px;
+    height: 435px;
+    z-index: -1;
+    // left: 34px;
+  }
+
+  .modal-body {
+    position: relative;
+    text-align: justify;
+    // padding-bottom: 120px;
+    // padding: 0px 0px 0px 80px;
+    // height: 400px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    // transform: translate(0px, 212px);
+    text-align: center;
+
+    // margin-top: 86px;
+    // &.single{
+    //   .icon-box{
+    //     margin-top: 52px;
+    //     justify-content: center;
+    //   }
+    //   .award-box{
+    //     margin-top: 38px;
+    //   }
+    //   .btn-get{
+    //     margin-top: 25px;
+    //   }
+    // }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      image,
+      img {
+        margin-left: 24px;
+      }
+
+      .icon-building {
+        min-width: 162px;
+        min-height: 162px;
+        background: white;
+      }
+    }
+
+    .award-box {
+      // position: absolute;
+      width: 470px;
+      height: 40px;
+      color: #084439;
+      font-size: 40px;
+      line-height: 1;
+      text-align: center;
+      bottom: 146px;
+      border-radius: 40px;
+      background-color: #fff;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+    }
+
+
+  }
+
+  .award-box {
+    // position: absolute;
+    width: 470px;
+    height: 40px;
+    background-size: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #084439;
+    border-radius: 40px;
+    background-color: #fff;
+    justify-content: center;
+  }
+
+  .btn-know {
+    // position: absolute;
+    width: 306px;
+    height: 173px;
+    margin-top: 20px;
+    // bottom: 0;
+    // left: 50%;
+    // transform: translateX(-50%)
+  }
+
+  .xianzi-btn {
+    margin-top: 0px;
+  }
+
+  .award-patch {
+    width: 200px;
+    height: 136px;
+    position: absolute;
+    top: 245px;
+    left: 132px;
+  }
+}
+.win-double-wrapper {
+  text-align: center;
+  .win-double-title{
+    width: 282px;
+    height: 62px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    .win-double-title-img{
+      width: 282px;
+    }
+  }
+  .double-award-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .double-award-patch-item {
+      position: relative;
+      width: 288px;
+      height: 288px;
+      .hy{
+        position: absolute;
+        width: 209px;
+        height: 136px;
+        left: 46px;
+        top: 50px;
+      }
+      .double-award-patch-img {
+        width: 124px;
+        height: 124px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        // padding: 40px;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+        position: relative;
+        left: 84px;
+        top: 20px;
+        image, img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .double-award-text {
+        height: 44px;
+        font-size: 22px;
+        color: white;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .double-award-plus {
+      width: 62px;
+      height: 58px;
+      margin-top: -28px;
+    }
+  }
+  .btn-get {
+    width: 306px;
+    height: 173px;
+    margin-top: 72px;
+  }
+}

@@ -1,0 +1,76 @@
+@import '@/style/common.scss';
+
+.point-wrapper {
+  position: fixed;
+  background: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 62px 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgb(233, 233, 233);
+
+  .slide-up {
+    animation: slideUp .3s ease-in-out
+  }
+
+  .icon {
+    position: absolute;
+    right: 32px;
+    top: 32px
+  }
+
+  .title {
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  .distance {
+    color: #999;
+    font-size: 28px;
+  }
+
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+
+    .left {
+      max-width: 70%;
+
+      .tips {
+        font-size: 28px;
+        margin-top: 12px;
+        color: rgb(22, 22, 22);
+        line-height: 1.6;
+      }
+    }
+
+    .right {
+      text-align: right;
+      flex: 1;
+      font-size: 0;
+      line-height: 1;
+
+      button {
+        background: $primary-color;
+        width: 140rpx;
+        padding: 16rpx !important;
+        line-height: 1 !important;
+      }
+
+    }
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate3d(0, 100%, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0)
+  }
+}

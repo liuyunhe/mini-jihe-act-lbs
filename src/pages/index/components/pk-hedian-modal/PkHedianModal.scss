@@ -1,0 +1,73 @@
+@import '@/style/common.scss';
+.niuqi-record-container {
+  position: relative;
+  width: 662px;
+  height: 629px;
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: white;
+  left: -45px;
+  .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 20px;
+    top: 30px;
+  }
+  .record-list {
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    width: 500px;
+    height: 410px;
+    padding: 16px;
+    text-align: justify;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-left: 65px;
+    transform: translate(108rpx, 120rpx);
+    color: #084439;
+    .record-item {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1;
+      padding: 14px 0;
+      border-bottom: 1px dashed #0097B1;
+      .line{
+        display: flex;
+        justify-content: space-between;
+        &+.line{
+          margin-top: 12px;
+        }
+        .time {
+          color: #999999;
+          font-size: 24px;
+          font-weight: normal;
+        }
+        .plus {
+          color: #084439
+        }
+        .minus {
+          color: #ED3624
+        }
+      }
+    }
+  }
+  .no-data{
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #084439;
+    padding-left: 60px;
+  }
+  .hedian-btn {
+    width: 332px;
+    position: absolute;
+    left: 210rpx;
+    bottom: -16rpx;
+  }
+}

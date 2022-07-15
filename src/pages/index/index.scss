@@ -1,0 +1,162 @@
+@import '@/style/common.scss';
+
+map {
+  width: 100%;
+  height: 100%;
+  // position: fixed;
+  // z-index: -1;
+}
+
+button {
+  white-space: pre-wrap;
+  padding: 24px !important;
+  font-size: 28px !important;
+  font-weight: normal !important;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .layer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .layer2 {
+    z-index: 2;
+  }
+
+  .top-box,
+  .bottom-box {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .top-box {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    padding: 46px 32px 0px 32px;
+
+    .left {
+      position: relative;
+
+      .location-info {
+        position: absolute;
+        font-size: 24px;
+        background: rgba($color: #000000, $alpha: .7);
+        padding: 8px 12px;
+        border-radius: 50px;
+        color: white;
+        top: 78px;
+        left: 0;
+        line-height: 1;
+        white-space: nowrap;
+        max-width: 90vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        image,
+        img {
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+        }
+        &.locatting{
+          image, img{
+            animation: rotate 1s infinite linear
+          }
+        }
+
+        text,
+        span {
+          vertical-align: middle;
+          margin-left: 12px;
+        }
+      }
+    }
+
+    .right {
+      .niuqi-value-box {
+        background: rgba($color: #000, $alpha: 0.5);
+        padding: 12px 20px;
+        border-radius: 50px;
+        line-height: 1;
+        font-size: 22px;
+        // font-weight: bold;
+        & + .niuqi-value-box {
+          margin-top: 10px;
+        }
+        &:nth-of-type(1) {
+          color: #A9FFFF
+        }
+        &:nth-of-type(2) {
+          color: #A9FFFF;
+        }
+      }
+    }
+  }
+
+  .bottom-box {
+    bottom: 0;
+    padding: 0px 32px 61px 32px;
+    .btn-normal {
+      width: 191px !important;
+      // background: $primary-color !important;
+      // border-radius: 50px;
+      font-weight: bold !important;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: transparent;
+      height: 72px;
+      &.xunhe {
+        background-image: url('https://qrmkt.oss-cn-beijing.aliyuncs.com/common/jihe2021/hthj/lbs-btn-kuaisuxunhe.png?.v=3.3');
+      }
+      &.rule {
+        background-image: url('https://qrmkt.oss-cn-beijing.aliyuncs.com/common/jihe2021/hthj/lbs-btn-rule.png?.v=3.3');
+      }
+    }
+
+    .btn-pk {
+      width: 162px !important;
+      height: 186px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 28px !important;
+      font-weight: bold !important;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: transparent;
+      background-image: url('https://qrmkt.oss-cn-beijing.aliyuncs.com/common/jihe2021/hthj/lbs-icon-start.png?.v=3.4');
+      padding: 10px !important;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  from {
+    rotate: 360deg;
+  }
+}

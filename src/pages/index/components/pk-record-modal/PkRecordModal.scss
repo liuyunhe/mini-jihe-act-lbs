@@ -1,0 +1,80 @@
+.record-container {
+  position: relative;
+  width: 706px;
+  height: 681px;
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: #157C77;
+
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: -15px;
+    top: 40px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 170px;
+    width: 564px;
+    transform: translateX(73px);
+
+    image,
+    img {
+      width: 282px;
+      height: 53px;
+    }
+  }
+
+  .record-list {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    width: 564px;
+    height: 348px;
+    text-align: justify;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transform: translate(38px, 0px);
+    padding: 18px 18px 18px 80px;
+
+    .record-item {
+      font-size: 0px;
+      line-height: 1;
+      border-bottom: 3px solid #CECECE;
+      padding: 27px 24px;
+
+      .line {
+        font-size: 24px;
+        display: flex;
+        line-height: 1;
+        justify-content: space-between;
+
+        &+.line {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+
+  .no-data {
+    padding-right: 20px;
+    padding-top: 140px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .close-icon {
+    width: 88px;
+    position: fixed;
+    bottom: 249px;
+    left: 338px
+  }
+}

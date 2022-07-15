@@ -1,0 +1,98 @@
+.jinniu-modal-container {
+  position: relative;
+  width: 719px;
+  height: 703px;
+  min-height: 100%;
+  box-sizing: border-box;
+  background-size: 100%;
+  color: #084439;
+  transform: translateY(-0px);
+  margin: 0 auto;
+  &.award {
+    .modal-bg {
+      left: 5px;
+    }
+    .modal-body {
+      transform: translateY(180px);
+    }
+    .shop-box {
+      font-size: 24px!important;
+      text-align: justify;
+      padding: 0 70px!important;
+    }
+  }
+
+  .modal-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 12px;
+    z-index: -1;
+  }
+
+  .modal-body {
+    position: relative;
+    text-align: justify;
+    padding-bottom: 120px;
+    padding: 0px 64px;
+    max-height: 580px;
+    box-sizing: border-box;
+    transform: translateY(292px);
+    margin-top: 46px;
+    &.no-award {
+      transform: translateY(260px);
+    }
+    .shop-box {
+      font-size: 28px;
+      text-align: justify;
+      padding: 0 90px;
+    }
+
+    &.single {
+      .icon-box {
+        margin-top: 52px;
+        justify-content: center;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .icon-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 6px;
+
+      .icon-building {
+        // min-width: 166px;
+        // min-height: 166px;
+        // background: white;
+      }
+    }
+
+    .award-box {
+      color: #084439;
+      font-size: 30px;
+      line-height: 1;
+      margin-top: 120px;
+      text-align: center;
+      position: relative;
+      top: 50px;
+    }
+  }
+  .btn-get {
+    width: 306px;
+    position: absolute;
+    left: 215px;
+    bottom: 80px;
+  }
+  .btn-know {
+    width: 306px;
+    height: 173px;
+    position: absolute;
+    left: 215px;
+    bottom: 130px;
+  }
+}
