@@ -1,0 +1,53 @@
+{
+	"name": "act-lbs",
+	"version": "1.0.0",
+	"private": true,
+	"description": "新春大集荷",
+	"templateInfo": {
+		"name": "default",
+		"typescript": true,
+		"css": "sass"
+	},
+	"scripts": {
+		"dev": "npm run build:weapp -- --watch",
+		"dev:prod": "NODE_ENV=production npm run build:weapp -- --watch",
+		"dev:weapp": "NODE_ENV=development npm run build:weapp -- --watch",
+		"build:dev": "set NODE_ENV=development&& taro build --type weapp",
+		"build:prod": "npm run build:weapp",
+		"build:weapp": "taro build --type weapp"
+	},
+	"browserslist": [
+		"last 3 versions",
+		"Android >= 4.1",
+		"ios >= 8"
+	],
+	"author": "",
+	"dependencies": {
+		"@babel/runtime": "^7.14.6",
+		"@tarojs/components": "^3.3.17",
+		"@tarojs/react": "^3.3.17",
+		"@tarojs/runtime": "^3.3.17",
+		"@tarojs/taro": "^3.3.17",
+		"react": "^16.10.0",
+		"react-dom": "^16.10.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.6",
+		"@babel/helper-define-map": "^7.14.5",
+		"@tarojs/cli": "^3.3.17",
+		"@tarojs/mini-runner": "^3.3.17",
+		"@tarojs/webpack-runner": "^3.3.17",
+		"@types/react": "^16.0.0",
+		"@types/webpack-env": "^1.16.2",
+		"@typescript-eslint/eslint-plugin": "^5.8.0",
+		"@typescript-eslint/parser": "^5.8.0",
+		"babel-preset-taro": "^3.3.17",
+		"eslint": "^6.8.0",
+		"eslint-config-taro": "^3.3.17",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-react": "^7.27.1",
+		"eslint-plugin-react-hooks": "^1.6.1",
+		"stylelint": "9.3.0",
+		"typescript": "^3.7.0"
+	}
+}

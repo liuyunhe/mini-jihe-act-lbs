@@ -1,0 +1,29 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/pk/pk",
+          "pathName": "pages/pk/pk",
+          "query": "id=11",
+          "scene": null
+        },
+        {
+          "name": "shopList",
+          "pathName": "pages/shop-list/ShopList",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
