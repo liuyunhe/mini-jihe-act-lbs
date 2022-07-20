@@ -26,15 +26,19 @@ export default function XianziModal(props: IXianziModalProps) {
   const tips = [
     {
       type: 'normal',
-      text: '荷花仙子:\n欢迎来到盛夏观荷园，集合来赏荷-采荷寻芳踪活动~'
-    }
-    // { type: 'normal', text: '你知道吗？自古就有一个美好的节日，男女老幼都要乘船观赏莲花，同时借着碧波清风纳凉，那就是每年农历六月二十四日，荷花的生日，雅称“荷诞日”。\n' },
+      text: '少侠请留步，小仙是荷花仙子~\n'
+    },
+    {
+      type: 'normal',
+      text:
+        '盛夏欢享如约至，集合赏荷赢好礼！欢迎来到【采荷寻芳踪】，少侠你看，这一路上遍地都是荷包与荷花，还请你跟着小仙一起，探寻他们踪迹吧~也许还会发现珍贵的'
+    },
     // { type: 'normal', text: '你看这一路上遍地都是荷花，少侠请跟着小仙一起，探寻荷花的踪迹吧~\n' },
     // { type: 'normal', text: '这些荷花里也许还藏着珍贵的' },
     // { type: 'keyword', text: '荷包' },
     // { type: 'normal', text: '和' },
-    // { type: 'keyword', text: '荷点' },
-    // { type: 'normal', text: '，在后面的游戏里一定有大用处，快快收好！' }
+    { type: 'keyword', text: '荷点' },
+    { type: 'normal', text: '哦，在后面的游戏里一定有大用处，快快收好！' }
   ]
   // const xianziTips = [
   //   { type: 'normal', text: '少侠少侠，快看这附近有好多荷包和牛气哦！看得小仙我都跃跃欲试了！少侠要不要跟小仙比试一场呢，赢了的话，小仙也有好礼奉上哦～' }

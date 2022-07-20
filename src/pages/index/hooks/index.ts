@@ -366,20 +366,20 @@ const useMarkers = ({
         if (type === MARKER_TYPE.CHALLENGE) {
           // marker.iconPath = item.patchPkImg + '?x-oss-process=image/resize,w_59'
           // marker.iconPath = item.patchPkImg
-          marker.width = 118 / 2.5
-          marker.height = 154 / 2.5
+          marker.width = 115 / 2.5
+          marker.height = 115 / 2.5
         } else if (type === MARKER_TYPE.SHOP) {
           // 84*163
-          marker.width = 70 / 2.5
-          marker.height = 115 / 2.5
+          marker.width = 155 / 3
+          marker.height = 107 / 3
         } else if (type === MARKER_TYPE.XIANZI) {
           // 66*153
           marker.width = 153 / 3
           marker.height = 199 / 3
         } else if (type === MARKER_TYPE.XINCHUN) {
           // 73*114
-          marker.width = 155 / 3
-          marker.height = 107 / 3
+          marker.width = 71 / 2.5
+          marker.height = 115 / 2.5
         } else {
           marker.width = (icon.width || 118) / 2
           marker.height = (icon.height || 0) / 2
@@ -464,7 +464,7 @@ const useCards = ({ userInfo, showModal, clearModal }) => {
     data = data.filter((item) => item.patchNum > 1)
     if (!data.length) {
       return showToast({
-        title: '年货道具数量不足',
+        title: '道具数量不足',
         icon: 'none'
       })
     }

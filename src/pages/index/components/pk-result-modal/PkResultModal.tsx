@@ -48,7 +48,7 @@ export default function PkResultModal(props: IPkResultModalProps) {
   const getAwardText = (condition: number, award: IPkNpc): string => {
     let awardText = ''
     if (condition === 1) {
-      awardText = `年货道具-${award.awardPatch.patchName}`
+      awardText = `宝藏道具-${award.awardPatch.patchName}`
       if (award.awardValue || award.givenPoints) {
         awardText += `,${award.awardValue || award.givenPoints}荷点`
       }

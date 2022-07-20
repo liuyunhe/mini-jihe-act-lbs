@@ -41,15 +41,17 @@ export default function PkHedianModal(props: IPkRecordModalProps) {
               history.map((record) => (
                 <View className="record-item" key={record.id}>
                   <View className="line">
-                    <Text>{record.txnDesc}</Text>
+                    <Text style="width: 80%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+                      {record.txnDesc}
+                    </Text>
                     {record.txnType === 1 && (
-                      <Text style="font-size: 26rpx;font-weight: bold;color: #808080">
+                      <Text style="font-size: 26rpx;font-weight: bold;color: #231815">
                         <Text className="plus">+</Text>
                         {record.txnScore}
                       </Text>
                     )}
                     {record.txnType === 0 && (
-                      <Text style="font-size: 26rpx;font-weight: bold;color: #808080">
+                      <Text style="font-size: 26rpx;font-weight: bold;color: #231815">
                         <Text className="minus">-</Text>
                         {record.txnScore}
                       </Text>

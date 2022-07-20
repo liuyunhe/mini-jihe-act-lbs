@@ -114,7 +114,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
                       {record.pkResult == 2 &&
                         Number(record.failMinusValue) > 0 && (
                           <Text style="color: #E60012">
-                            <Text>-</Text>1个年货道具-{record.note}
+                            <Text>-</Text>1个宝藏道具-{record.note}
                           </Text>
                         )}
                     </View>
@@ -157,7 +157,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
                     (record.pkResult == 2 && record.failMinusPoints > 0)) && (
                     <View className="line">
                       {record.pkResult == 1 && record.awardValue > 0 && (
-                        <Text>+1个年货道具-{record.note}</Text>
+                        <Text>+1个宝藏道具-{record.note}</Text>
                       )}
                       {record.pkResult == 2 && record.failMinusPoints > 0 && (
                         <Text style="color: #E60012">
@@ -176,7 +176,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
               ))}
             {!hasMyHistory && (
               <View className="no-data">
-                暂无挑战游戏数据，挑战PK有机会获得年货道具！
+                暂无挑战游戏数据，挑战PK有机会获得道具！
               </View>
             )}
           </ScrollView>

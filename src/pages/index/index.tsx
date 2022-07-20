@@ -26,7 +26,7 @@ import { ILoginData } from '@/service'
 import { MapProps } from '@tarojs/components/types/Map'
 import QQMap from '@/utils/thirdparty/qqmap-wx-jssdk'
 // @ts-ignore
-// import audio from '@/audio/lbs-launch-xianzi-audio.mp3'
+import audio from '@/audio/lbs-launch-xianzi-audio.mp3'
 // @ts-ignore
 // import bgm from '@/audio/lbs-bgm.mp3'
 import { getData, setData } from '@/store/store'
@@ -190,12 +190,9 @@ export default function Index(props: any) {
     console.log('ready')
     setResourceReady(true)
     setRefreshIcon(getResource('iconRefresh'))
-    // if (getStorageSync('IS_FIRST') !== false) {
-    //   await playBgm(audio, false)
-    //   playBgm(bgm, true)
-    // } else {
-    //   playBgm(bgm, true)
-    // }
+    if (getStorageSync('IS_FIRST') !== false) {
+      await playBgm(audio, false)
+    }
   }
   // 地图视区发生变化, 拖动、缩放、旋转
   const onRegionChange = debounce((res: any) => {

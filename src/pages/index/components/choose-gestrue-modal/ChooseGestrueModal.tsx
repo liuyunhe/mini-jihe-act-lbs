@@ -57,7 +57,7 @@ export default function ChooseGestrueModal(props: IChooseGestrueModalProps) {
   const onNianhuoClick = (nianhuoItem: IBuildingsData) => {
     if (nianhuoItem.patchNum <= 0) {
       return showToast({
-        title: `您尚未拥有年货“${nianhuoItem.patchName}”`,
+        title: `您尚未拥有道具“${nianhuoItem.patchName}”`,
         icon: 'none'
       })
     }
@@ -66,7 +66,7 @@ export default function ChooseGestrueModal(props: IChooseGestrueModalProps) {
   const onNianhuoSubmit = () => {
     if (!nianhuo) {
       return showToast({
-        title: '请选择年货',
+        title: '请选择道具',
         icon: 'none'
       })
     }
