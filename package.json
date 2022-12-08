@@ -12,7 +12,8 @@
 		"dev": "npm run build:weapp -- --watch",
 		"dev:prod": "set NODE_ENV=production && npm run build:weapp -- --watch",
 		"build:dev": "set NODE_ENV=development && taro build --type weapp",
-		"build:prod": "taro build --type weapp"
+		"build:prod": "npm run build:weapp",
+		"build:weapp": "taro build --type weapp"
 	},
 	"browserslist": [
 		"last 3 versions",
