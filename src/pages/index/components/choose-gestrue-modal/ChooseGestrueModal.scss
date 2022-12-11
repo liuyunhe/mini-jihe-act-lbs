@@ -10,10 +10,10 @@
   transform: translateY(-0px);
   // background-color: #F59FA3;
   background-repeat: no-repeat;
-
+  background-color: #F7BCB3;
   &.choose {
-    width: 729px;
-    height: 703px;
+    width: 620px;
+    height: 713px;
 
     .modal-body {
       padding: 14px 0px 0px 23px;
@@ -116,7 +116,7 @@
     .gestrue-box {
       display: flex;
       justify-content: center;
-      margin: 185px auto 0 auto;
+      margin: 145px auto 0 auto;
       .gestrue-item {
         text-align: center;
         margin-right: 16px;
@@ -152,8 +152,8 @@
         margin-top: 12px;
       }
       .btn-submit, .btn-latter {
-        width: 247px;
-        height: 105px;
+        width: 231px;
+        height: 68px;
         margin-top: -40px;
       }
       .btn-latter {

@@ -226,14 +226,14 @@ export default function ChooseGestrueModal(props: IChooseGestrueModalProps) {
               />
             )}
             {showGesture && (
-              <View className="button-wrapper">
+              <View style="margin-left: -14rpx;">
                 <Image
                   src={btnSubmit.path}
                   className="btn-submit"
                   onClick={onSubmitClick}
                 />
                 <Image
-                  src={pkLatter.path}
+                  src={btnPkLatterNianhuo.path}
                   className="btn-latter"
                   onClick={onCloseClick}
                 />

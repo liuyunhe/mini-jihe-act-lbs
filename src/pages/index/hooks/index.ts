@@ -366,24 +366,25 @@ const useMarkers = ({
         if (type === MARKER_TYPE.CHALLENGE) {
           // marker.iconPath = item.patchPkImg + '?x-oss-process=image/resize,w_59'
           // marker.iconPath = item.patchPkImg
-          marker.width = 115 / 2.5
-          marker.height = 115 / 2.5
+          marker.width = ~~(127 / 2.5)
+          marker.height = ~~(188 / 2.5)
         } else if (type === MARKER_TYPE.SHOP) {
           // 84*163
-          marker.width = 155 / 3
-          marker.height = 107 / 3
+          marker.width = ~~(147 / 3)
+          marker.height = ~~(178 / 3)
         } else if (type === MARKER_TYPE.XIANZI) {
           // 66*153
-          marker.width = 153 / 3
-          marker.height = 199 / 3
+          marker.width = ~~(108 / 3)
+          marker.height = ~~(228 / 3)
         } else if (type === MARKER_TYPE.XINCHUN) {
           // 73*114
-          marker.width = 71 / 2.5
-          marker.height = 115 / 2.5
+          marker.width = ~~(114 / 2.5)
+          marker.height = ~~(167 / 2.5)
         } else {
-          marker.width = (icon.width || 118) / 2
-          marker.height = (icon.height || 0) / 2
+          marker.width = ~~((icon.width || 118) / 2)
+          marker.height = ~~((icon.height || 0) / 2)
         }
+
         // 计算距离， 距离100m内的金牛荷包显示领取提示, 并且没有领取
         if (type === MARKER_TYPE.SHOP && distanceArray && item.isGet === 0) {
           if (
@@ -547,10 +548,10 @@ const useModal = (setModalStatus) => {
     // 新春荷包
     xinchunModal: { show: false, condition: 0, award: {}, markerInfo: {} },
     // 荷塘建筑
-    buildingModal: { show: false, condition: 0 },
+    // buildingModal: { show: false, condition: 0 },
     // pk规则
     pkRulesModal: { show: false },
-    // 选择手势
+    // 选择手势-选择道具pk
     gestrueModal: { show: false, condition: 0 },
     // pk结果
     pkResultModal: { show: false, condition: 0, award: {} },
@@ -558,12 +559,12 @@ const useModal = (setModalStatus) => {
     pkInfoModal: { show: false },
     // 游戏记录
     pkRecordModal: { show: false, condition: 0 },
-    // 金牛荷包
+    // 店铺荷包
     jinniuModal: { show: false, condition: 0, award: {}, shopInfo: {} },
-    // 牛气值记录
+    // 荷点记录
     pkHedianModal: { show: false, condition: 0 },
     // 荷包记录值
-    pkHebaoModal: { show: false, condition: 0 },
+    // pkHebaoModal: { show: false, condition: 0 },
     // 仙子
     xianziModal: {
       show: getStorageSync('IS_FIRST') !== false,

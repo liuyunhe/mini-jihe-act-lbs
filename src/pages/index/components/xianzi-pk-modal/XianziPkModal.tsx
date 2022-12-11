@@ -22,6 +22,8 @@ export default function XianziPkModal(props: IXianziModalProps) {
   const bg = getResource('bgConfirm')
   const iconTipsXianzi = getResource('iconXianzi')
   const btnPk = getResource('btnPkSoon')
+  const lbsTipsXianzi = getResource('lbsTipsXianzi')
+  const lbsXianziPkBg = getResource('lbsXianziPkBg')
   const onPk = () => {
     setData('pkinfo', props.marker)
     navigateTo({
@@ -32,7 +34,7 @@ export default function XianziPkModal(props: IXianziModalProps) {
   return (
     <Popup show={show} onClose={onClose} showClose={false} full>
       <View className="xianzi-pk-modal">
-        <Image src={bg.path} className="xianzi-pk-bg"></Image>
+        <Image src={lbsXianziPkBg.path} className="xianzi-pk-bg"></Image>
         <View className="xianzi-pk-tips">
           尊敬的用户，您附近出现了稀有荷花仙子，向它发起挑战，胜利则可获得宝藏道具，且有机会获得荷点。
         </View>
@@ -41,7 +43,7 @@ export default function XianziPkModal(props: IXianziModalProps) {
           className="xianzi-pk-btn"
           onClick={onPk}
         ></Image>
-        <Image src={iconTipsXianzi.path} className="tips-xianzi jump"></Image>
+        <Image src={lbsTipsXianzi.path} className="tips-xianzi"></Image>
       </View>
     </Popup>
   )

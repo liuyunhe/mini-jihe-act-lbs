@@ -1,6 +1,6 @@
 export default {
-  "navigationBarBackgroundColor": "#38BFB9",
-  "navigationBarTitleText": "快速寻荷",
+  "navigationBarBackgroundColor": "#BD2B25",
+  "navigationBarTitleText": "快速找店",
   "navigationBarTextStyle": 'white',
   // "enablePullDownRefresh": true,
   "backgroundTextStyle": 'dark',

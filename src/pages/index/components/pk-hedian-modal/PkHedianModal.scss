@@ -1,14 +1,15 @@
 @import '@/style/common.scss';
 .niuqi-record-container {
   position: relative;
-  width: 662px;
-  height: 629px;
+  width: 620px;
+  height: 929px;
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
   background-size: 100%;
   color: white;
-  left: -45px;
+  left: -20px;
+  top: -20px;
   .bg{
     position: absolute;
     width: 100%;
@@ -21,19 +22,19 @@
     &::-webkit-scrollbar{
       display: none;
     }
-    width: 500px;
-    height: 410px;
+    width: 550px;
+    height: 460px;
     padding: 16px;
     text-align: justify;
     overflow-y: auto;
     box-sizing: border-box;
-    padding-left: 65px;
-    transform: translate(108rpx, 120rpx);
-    color: #084439;
+    padding-left: 45px;
+    transform: translate(45px, 200px);
+    color: #157C77;
     .record-item {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
-      line-height: 1;
+      line-height: 1.5;
       padding: 14px 0;
       border-bottom: 1px dashed #0097B1;
       .line{
@@ -43,31 +44,31 @@
           margin-top: 12px;
         }
         .time {
-          color: #999999;
+          color: #767676;
           font-size: 24px;
           font-weight: normal;
         }
         .plus {
-          color: #084439
+          color: #157C77
         }
         .minus {
-          color: #ED3624
+          color: #E60012
         }
       }
     }
   }
   .no-data{
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 200px;
     text-align: center;
     font-size: 28px;
     color: #084439;
     padding-left: 60px;
   }
   .hedian-btn {
-    width: 332px;
+    width: 231px;
     position: absolute;
-    left: 210rpx;
-    bottom: -16rpx;
+    left: 220px;
+    bottom: 100px;
   }
 }

@@ -1,7 +1,7 @@
 .record-container {
   position: relative;
-  width: 706px;
-  height: 681px;
+  width: 682px;
+  height: 775px;
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
@@ -13,8 +13,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    left: -15px;
-    top: 40px;
+    left: 30px;
   }
 
   .btn-wrapper {
@@ -22,12 +21,13 @@
     justify-content: space-around;
     padding-top: 170px;
     width: 564px;
-    transform: translateX(73px);
+    transform: translateX(60px);
+    position: relative;
 
     image,
     img {
-      width: 282px;
-      height: 53px;
+      width: 232px;
+      height: 70px;
     }
   }
 
@@ -65,7 +65,7 @@
 
   .no-data {
     padding-right: 20px;
-    padding-top: 140px;
+    padding-top: 80px;
     padding-left: 20px;
     text-align: center;
     font-size: 24px;

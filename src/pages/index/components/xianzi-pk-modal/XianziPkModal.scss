@@ -1,9 +1,7 @@
 .xianzi-pk-modal {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
+  width: 676px;
+  height: 686px;
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -11,24 +9,22 @@
   justify-content: center;
   .xianzi-pk-bg {
     position: absolute;
-    width: 381px;
-    height: 221px;
-    right: 79px;
-    bottom: 317px;
+    width: 676px;
+    height: 686px;
   }
   .xianzi-pk-btn {
     position: absolute;
-    width: 197px;
-    height: 65px;
-    right: 171px;
-    bottom: 197px;
+    width: 231px;
+    height: 68px;
+    right: 215px;
+    bottom: 111px;
   }
   .xianzi-pk-tips {
-    width: 300px;
-    height: 220px;
+    width: 400px;
+    height: 100px;
     position: absolute;
-    left: 350px;
-    bottom: 300px;
+    left: 150px;
+    bottom: 250px;
     font-size: 24px;
     overflow-y: auto;
     text-align: justify;
@@ -36,10 +32,10 @@
   }
   .tips-xianzi {
     position: absolute;
-    width: 222px;
-    height: 291px;
-    left: 64px;
-    bottom: 281px;
+    width: 298px;
+    height: 334px;
+    left: 222px;
+    bottom: 472px;
   }
   .jump{
     animation: jump 1.5s infinite ease-in-out alternate

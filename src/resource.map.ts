@@ -13,7 +13,7 @@ export const IMAGE_RESOURCES = {
   btnKuaisuxunhe: 'lbs-btn-kuaisuxunhe.png',
   iconHebao: 'lbs-icon-hebao.png',
   iconStone: 'lbs-icon-stone.png',
-  bgConfirm: 'lbs-bg-confirm1.png',
+  bgConfirm: 'lbs-bg-confirm.png',
   bgPkerInfo: 'lbs-bg-pker-info1.png',
   btnPkSoon: 'lbs-btn-pk-soon1.png',
   iconHedian: 'lbs-icon-hedian.png',
@@ -21,7 +21,7 @@ export const IMAGE_RESOURCES = {
   bgGameHistory: 'lbs-bg-game-history1.png',
   bgXianzi: 'lbs-bg-xianzi.png',
   btnRule: 'lbs-btn-rule.png',
-  iconMarkerHebao: 'lbs-icon-marker-hebao2.png',
+  iconMarkerHebao: 'lbs-icon-marker-hebao.png',
   iconXianzi: 'lbs-icon-xianzi1.png',
   bgGetHebao: 'lbs-bg-get-hebao1.png',
   btnConfirm: 'lbs-btn-confirm1.png',
@@ -35,6 +35,7 @@ export const IMAGE_RESOURCES = {
   markerShop: 'lbs-marker-shop2.png',
   bgHedianGot: 'lbs-bg-hedian-got1.png',
   btnGetQuick: 'lbs-btn-get-quick1.png',
+  btnGetQuick2: 'lbs-btn-get-quick2.png',
   iconAvatarDefault: 'lbs-icon-avatar-default.png',
   iconSisorsCircle: 'lbs-icon-sisors-circle.png',
   pkBg: 'lbs-pk-bg.jpg',
@@ -56,7 +57,7 @@ export const IMAGE_RESOURCES = {
   iconRadio: 'lbs-icon-radio1.png',
   iconRadioActive: 'lbs-icon-radio-active1.png',
   iconWechat: 'lbs-icon-wechat.png',
-  markerXianzi: 'lbs-marker-xianzi1.png',
+  markerXianzi: 'lbs-marker-xianzi.png',
   iconPlusWhite: 'lbs-icon-plus-white.png',
   iconPlus: 'lbs-icon-plus1.png',
   bgNoAward: 'lbs-bg-no-award1.png',
@@ -92,7 +93,9 @@ export const IMAGE_RESOURCES = {
   textChooseNianhuo: 'lbs-text-choose-nianhuo.png',
   textChooseGesture: 'lbs-text-choose-gesture.png',
   btnNianhuoPkSoon: 'lbs-nianhuo-pk-soon1.png',
-  btnPkLatterNianhuo: 'btn-pk-latter-nianhuo1.png'
+  btnPkLatterNianhuo: 'btn-pk-latter-nianhuo1.png',
+  lbsTipsXianzi: 'lbs-tips-xianzi.png',
+  lbsXianziPkBg: 'lbs-xianzi-pk-bg.png'
 }
 
 export function getImage(key: string) {

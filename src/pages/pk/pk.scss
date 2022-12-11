@@ -8,7 +8,6 @@ page {
   height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-
   .pk-bg {
     width: 100%;
     position: fixed;
@@ -17,7 +16,9 @@ page {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-size: cover;
+    background-color: #FBDCD3;
+    background-size: contain;
+    background-repeat: no-repeat;
     .pk-bg-top {
       width: 702px;
       height: 390px;
@@ -36,17 +37,17 @@ page {
   }
 
   .pkinfo-box {
-    margin-top: 380px;
+    margin-top: 450px;
     text-align: center;
     white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 0 50px;
+    padding: 0 58px;
 
     .vs-text {
-      width: 64px;
+      width: 104px;
       position: absolute;
       transform: translateY(-4px);
       z-index: 2;
@@ -59,8 +60,8 @@ page {
       display: inline-flex;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 251px;
-      height: 120px;
+      width: 292px;
+      height: 103px;
       margin-right: 0;
       font-size: 0;
       &.right {
@@ -68,18 +69,18 @@ page {
         // flex: 1;
         .avatar {
           right: 9px;
-          width: 102px;
-          height: 102px;
-          top: 61px!important;
+          width: 96px;
+          height: 96px;
+          top: 50px!important;
         }
       }
       &.left {
         // flex: 1;
         .avatar {
-          left: 9px;
-          width: 102px;
-          height: 102px;
-          top: 61px!important;
+          left: 6px;
+          width: 90px;
+          height: 90px;
+          top: 51px!important;
         }
       }
 
@@ -92,8 +93,8 @@ page {
       }
 
       .avatar {
-        width: 106px;
-        height: 106px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
         // border: 8px solid rgba($color: $secondary-color, $alpha: 0.7);
         position: absolute;
@@ -114,7 +115,6 @@ page {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 38px;
     line-height: 1;
     font-size: 0;
     margin-top: 4px;
@@ -122,7 +122,7 @@ page {
       flex: 1;
       // background-color: #006888;
       border-radius: 20px;
-      color: #fff;
+      color: #111;
       font-size: 26px;
       padding: 6px 20px;
       text-align: center;
@@ -177,11 +177,11 @@ page {
   }
   .btn-wrapper {
     text-align: center;
-    margin-top: -20px;
+    margin-top: 0px;
     image,
     img {
-      width: 306px;
-      height: 173px;
+      width: 231px;
+      height: 68px;
     }
   }
 
@@ -192,7 +192,7 @@ page {
 
     image,
     img {
-      width: 48%;
+      width: 45%;
     }
     .left {
       transform: translateX(-350px);

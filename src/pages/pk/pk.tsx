@@ -216,7 +216,7 @@ export default function Pk() {
       {/* <View className='choose-text'>
         <Image src={chooseText}></Image>
       </View> */}
-      <View className="btn-tips">选择手势开始PK</View>
+      <View className="btn-tips"></View>
       {!pkFinished && (
         <View className="btn-wrapper">
           <Image src={confirmBtn} mode="widthFix" onClick={onConfirm}></Image>

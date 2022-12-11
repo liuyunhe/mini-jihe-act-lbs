@@ -1,12 +1,11 @@
 .pkinfo-modal-container {
   position: relative;
-  width: 706px;
-  height: 681px;
+  width: 717px;
+  height: 812px;
   min-height: 100%;
   box-sizing: border-box;
   background-size: 100%;
   color: white;
-  transform: translateY(50px);
 
   .modal-bg {
     position: absolute;
@@ -19,12 +18,12 @@
   .modal-body {
     position: relative;
     text-align: justify;
-    height: 520px;
+    height: 570px;
     overflow-y: auto;
     box-sizing: border-box;
     transform: translate(0px, 135px);
     text-align: center;
-
+    padding-top: 80px;
     .avatar-image {
       width: 126px;
       height: 126px;
@@ -53,6 +52,7 @@
 
     .building-image {
       width: 175px;
+      height: 175px;
       // background: white;
       margin-top: 39px;
       border-radius: 8px;
@@ -64,9 +64,9 @@
 
     .btn-know {
       position: absolute;
-      width: 191px;
-      height: 72px;
-      bottom: 40px;
+      width: 231px;
+      height: 68px;
+      bottom: 0px;
       left: 50%;
       transform: translateX(-50%)
     }

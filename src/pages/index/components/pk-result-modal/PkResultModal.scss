@@ -16,14 +16,17 @@
 
     .modal-bg {
       // left: 36px!important;
-      width: 284px !important;
-      height: 439px !important;
+      width: 667px !important;
+      height: 733px !important;
       margin-bottom: 30px;
+      position: relative;
+      left: -100px;
       // height: 559px!important;
       &.xianzi{
-      width: 538px!important;
-      height: 435px!important;
+      width: 546px!important;
+      height: 601px!important;
       margin-left: -40px;
+      left: 0px;
       }
     }
 
@@ -33,7 +36,9 @@
 
     .btn-know {
       // transform: translateX(-65%)!important;
-      margin-top: 50px;
+      margin-top: 0px;
+      position: relative;
+      top: -100px;
     }
 
     .award-box {
@@ -51,8 +56,8 @@
 
   .modal-bg {
     // position: absolute;
-    width: 283px;
-    height: 435px;
+    width: 381px;
+    height: 634px;
     z-index: -1;
     // left: 34px;
   }
@@ -121,24 +126,25 @@
   }
 
   .award-box {
-    // position: absolute;
+    position: absolute;
+    top: 110px;
     width: 470px;
-    height: 40px;
+    height: 60px;
     background-size: 100%;
     margin-top: 20px;
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: #084439;
-    border-radius: 40px;
-    background-color: #fff;
+    color: #fff;
+    border-radius: 60px;
+    background-color: #106B67;
     justify-content: center;
   }
 
   .btn-know {
     // position: absolute;
-    width: 306px;
-    height: 173px;
+    width: 276px;
+    height: 81px;
     margin-top: 20px;
     // bottom: 0;
     // left: 50%;
@@ -147,25 +153,27 @@
 
   .xianzi-btn {
     margin-top: 0px;
+    position: relative;
+    top: -150px;
   }
 
   .award-patch {
     width: 200px;
     height: 136px;
     position: absolute;
-    top: 245px;
+    top: 370px;
     left: 132px;
   }
 }
 .win-double-wrapper {
   text-align: center;
   .win-double-title{
-    width: 282px;
-    height: 62px;
+    width: 175px;
+    height: 50px;
     margin: 0 auto;
     margin-bottom: 90px;
     .win-double-title-img{
-      width: 282px;
+      width: 175px;
     }
   }
   .double-award-box {
@@ -179,31 +187,35 @@
       height: 288px;
       .hy{
         position: absolute;
-        width: 209px;
-        height: 136px;
-        left: 46px;
-        top: 50px;
+        width: 288px;
+        height: 288px;
+        left: 4px;
+        top: -12px;
       }
       .double-award-patch-img {
-        width: 124px;
-        height: 124px;
+        width: 170px;
+        height: 170px;
         background-size: 100%;
         background-repeat: no-repeat;
         // padding: 40px;
         box-sizing: border-box;
         margin-bottom: 80px;
         position: relative;
-        left: 84px;
-        top: 20px;
+        left: 64px;
+        top: 40px;
         image, img {
           width: 100%;
           height: 100%;
         }
       }
       .double-award-text {
+        width: 270px;
         height: 44px;
+        border-radius: 44px;
+        text-align: center;
         font-size: 22px;
         color: white;
+        background-color: #0F6964;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         text-align: center;
@@ -211,6 +223,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
       }
     }
     .double-award-plus {
@@ -220,8 +233,8 @@
     }
   }
   .btn-get {
-    width: 306px;
-    height: 173px;
+    width: 231px;
+    height: 68px;
     margin-top: 72px;
   }
 }

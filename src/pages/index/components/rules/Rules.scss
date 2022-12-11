@@ -1,7 +1,7 @@
 .rule-container {
   position: relative;
-  width: 664px;
-  height: 639px;
+  width: 618px;
+  height: 767px;
   position: relative;
   min-height: 100%;
   box-sizing: border-box;
@@ -13,7 +13,8 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    left: -30px;
+    left: -5px;
+    top: -30px;
   }
 
   .rule-body {
@@ -26,8 +27,8 @@
     max-height: 420rpx;
     overflow-y: auto;
     box-sizing: border-box;
-    transform: translateY(130px);
-    color: #084439;
+    transform: translateY(200px);
+    color: #FFFCDB;
     .rule-item {
       font-size: 24px;
       line-height: 1.5;

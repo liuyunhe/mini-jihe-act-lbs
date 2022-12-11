@@ -9,7 +9,7 @@ export default {
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: '采荷寻芳踪',
+    navigationBarTitleText: '好运年华',
     navigationBarTextStyle: 'black'
   },
   permission: {
@@ -17,5 +17,7 @@ export default {
       desc: '授权位置信息，才能参与活动'
     }
   },
-  style: 'v2',
+  requiredPrivateInfos: ['startLocationUpdate', 'onLocationChange'],
+  requiredBackgroundModes: ['location'],
+  style: 'v2'
 }

@@ -46,14 +46,12 @@ export default function PkHedianModal(props: IPkRecordModalProps) {
                     </Text>
                     {record.txnType === 1 && (
                       <Text style="font-size: 26rpx;font-weight: bold;color: #231815">
-                        <Text className="plus">+</Text>
-                        {record.txnScore}
+                        <Text className="plus">+{record.txnScore}</Text>
                       </Text>
                     )}
                     {record.txnType === 0 && (
                       <Text style="font-size: 26rpx;font-weight: bold;color: #231815">
-                        <Text className="minus">-</Text>
-                        {record.txnScore}
+                        <Text className="minus">-{record.txnScore}</Text>
                       </Text>
                     )}
                   </View>

@@ -102,10 +102,10 @@ button {
           margin-top: 10px;
         }
         &:nth-of-type(1) {
-          color: #A9FFFF
+          color: #fff
         }
         &:nth-of-type(2) {
-          color: #A9FFFF;
+          color: #fff;
         }
       }
     }
@@ -115,14 +115,14 @@ button {
     bottom: 0;
     padding: 0px 32px 61px 32px;
     .btn-normal {
-      width: 191px !important;
+      width: 200px !important;
       // background: $primary-color !important;
       // border-radius: 50px;
       font-weight: bold !important;
       background-repeat: no-repeat;
       background-size: 100%;
       background-color: transparent;
-      height: 72px;
+      height: 60px;
       &.xunhe {
         background-image: url('https://qrmkt.oss-cn-beijing.aliyuncs.com/common/jihe2021/hthj/lbs-btn-kuaisuxunhe.png?.v=3.3');
       }
@@ -132,9 +132,8 @@ button {
     }
 
     .btn-pk {
-      width: 162px !important;
-      height: 186px;
-      border-radius: 50%;
+      width: 160px !important;
+      height: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;

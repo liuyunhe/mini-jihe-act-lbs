@@ -29,6 +29,7 @@ export default function PkResultModal(props: IPkResultModalProps) {
   const bgSuccess = getImage('bgPkSuccess')
   const btnKnow = getImage('btnKnowDraw')
   const btnGet = getImage('btnGetQuick')
+  const btnGet2 = getImage('btnGetQuick2')
   const bgPkAwardText = getImage('bgPkAwardText')
   const iconPlus = getImage('iconPlus')
   const iconHeqi = getImage('iconHeqi')
@@ -156,7 +157,7 @@ export default function PkResultModal(props: IPkResultModalProps) {
               </View>
             </View>
           </View>
-          <Image src={btnGet} className="btn-get" onClick={onGet}></Image>
+          <Image src={btnGet2} className="btn-get" onClick={onGet}></Image>
         </View>
       )}
     </Popup>
