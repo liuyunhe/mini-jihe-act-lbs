@@ -11,7 +11,7 @@
 	"scripts": {
 		"dev": "npm run build:weapp -- --watch",
 		"dev:prod": "set NODE_ENV=production && npm run build:weapp -- --watch",
-		"build:dev": "set NODE_ENV=development && taro build --type weapp",
+		"build:dev": "taro build --type weapp --env development",
 		"build:prod": "npm run build:weapp",
 		"build:weapp": "taro build --type weapp"
 	},
