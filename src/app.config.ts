@@ -17,7 +17,11 @@ export default {
       desc: '授权位置信息，才能参与活动'
     }
   },
-  requiredPrivateInfos: ['startLocationUpdate', 'onLocationChange'],
+  requiredPrivateInfos: [
+    'startLocationUpdate',
+    'onLocationChange',
+    'getLocation'
+  ],
   requiredBackgroundModes: ['location'],
   style: 'v2'
 }
