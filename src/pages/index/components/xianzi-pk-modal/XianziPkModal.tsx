@@ -36,7 +36,7 @@ export default function XianziPkModal(props: IXianziModalProps) {
       <View className="xianzi-pk-modal">
         <Image src={lbsXianziPkBg.path} className="xianzi-pk-bg"></Image>
         <View className="xianzi-pk-tips">
-          尊敬的用户，您附近出现了稀有荷花仙子，向它发起挑战，胜利则可获得宝藏道具，且有机会获得荷点。
+          尊敬的用户，您附近出现了稀有荷花仙子，向它发起挑战，胜利则可获得宝藏道具，且有机会获得荷气值。
         </View>
         <Image
           src={btnPk.path}

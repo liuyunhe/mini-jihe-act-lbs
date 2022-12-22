@@ -103,7 +103,7 @@ export default function Pk() {
     //     "msg": null,
     //     "data": {
     //         "rivalGesture": 1,
-    //         "minusPoints": 68,  //扣除的荷点.
+    //         "minusPoints": 68,  //扣除的荷气值.
     //         "isWin": false
     //     }
     // }

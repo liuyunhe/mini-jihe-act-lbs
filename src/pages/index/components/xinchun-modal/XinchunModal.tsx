@@ -46,7 +46,7 @@ export default function XinchunModal(props: IXinchunModalProps) {
   const getAwardText = () => {
     let text = ''
     // if (props.award.points) {
-    //   text += `${props.award.points}荷点`
+    //   text += `${props.award.points}荷气值`
     //   if (props.condition == 1) {
     //     text += ` + `
     //   }
@@ -55,7 +55,7 @@ export default function XinchunModal(props: IXinchunModalProps) {
     //   text += `${props.award.hebaoNum}荷包`
     // }
     if (props.award.points) {
-      text += `${props.award.points}荷点`
+      text += `${props.award.points}荷气值`
     }
 
     return text
@@ -99,7 +99,7 @@ export default function XinchunModal(props: IXinchunModalProps) {
               onClick={props.onClose}
             ></Image>
           )}
-          {/* <View className='award-box'>388荷点 + 1个荷包</View>
+          {/* <View className='award-box'>388荷气值 + 1个荷包</View>
           <Image src={btnGet.path} mode='widthFix' className='btn-get' onClick={onGet}></Image> */}
         </View>
       </View>

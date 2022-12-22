@@ -36,7 +36,7 @@ export default function XinchunModal(props: IJinNiuModalProps) {
     console.log(props)
     let text = ''
     // if (props.award.points) {
-    //   text += `${props.award.points}荷点`
+    //   text += `${props.award.points}荷气值`
     //   if (props.condition == 1) {
     //     text += ` + `
     //   }
@@ -45,7 +45,7 @@ export default function XinchunModal(props: IJinNiuModalProps) {
     //   text += `${props.award.hebaoNum}个荷包`
     // }
     if (props.award.points) {
-      text += `${props.award.points}个荷点`
+      text += `${props.award.points}个荷气值`
     }
     return text
   }

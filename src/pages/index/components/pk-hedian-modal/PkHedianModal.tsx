@@ -64,7 +64,7 @@ export default function PkHedianModal(props: IPkRecordModalProps) {
         )}
         {(!history || !history.length) && (
           <View className="record-list no-data">
-            暂无荷点数据,挑战pk,有机会获得荷点！
+            暂无荷气值数据,挑战pk,有机会获得荷气值！
           </View>
         )}
         <Image

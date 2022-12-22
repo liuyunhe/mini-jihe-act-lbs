@@ -58,15 +58,15 @@ export interface IPkHistoryData {
   canPkTime: string
   userPatchId: number
   awardValue: number //年货id
-  awardPoints: number //荷点
+  awardPoints: number //荷气值
   stauts: number //  0待pk   1已经pk
   day: string
   ctime: string //pk发起时间
   lat: number
   lng: number
   pkTime: string //pk的时间
-  failMinusValue: number //熟了，扣除的荷点
-  winValue: number //赢取的荷点
+  failMinusValue: number //熟了，扣除的荷气值
+  winValue: number //赢取的荷气值
   hebaoNum: number
   statusText?: string
   note: string //备注，里面放的年货道具的名称
@@ -105,7 +105,7 @@ export interface IMyPkHistoryData {
   lng: number
   pkTime: string //用户挑战的 时间.
   failMinusPoints: number // 年货id.
-  awardValue: number //赢了的荷点
+  awardValue: number //赢了的荷气值
   type: number
   hebaoNum: number
   statusText?: string

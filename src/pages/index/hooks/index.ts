@@ -506,7 +506,7 @@ const usePk = ({ clearModal, showModal, hideModal, location, getCards }) => {
     const { hedian } = getData('points')
     if (hedian < 68) {
       return showToast({
-        title: '荷点不足',
+        title: '荷气值不足',
         icon: 'none'
       })
     }
@@ -561,7 +561,7 @@ const useModal = (setModalStatus) => {
     pkRecordModal: { show: false, condition: 0 },
     // 店铺荷包
     jinniuModal: { show: false, condition: 0, award: {}, shopInfo: {} },
-    // 荷点记录
+    // 荷气值记录
     pkHedianModal: { show: false, condition: 0 },
     // 荷包记录值
     // pkHebaoModal: { show: false, condition: 0 },
@@ -856,7 +856,7 @@ const useLocation = ({ map, setting, setSetting }) => {
   useDidShow(requestLocation)
   return { location, setLocation, requestLocation, mapContext }
 }
-// 获取荷点数据
+// 获取荷气值数据
 const useHedian = () => {
   const isOver = useRef(false)
   const initialState: IHedianData[] = []

@@ -17,9 +17,9 @@ ActivityRules.defaultProps = {
   onClose: () => {}
 }
 const initialRules = [
-  '1、帐户拥有相同宝藏道具数量不低于2个，荷点不低于68；',
-  '2、将自己拥有的宝藏道具分享到地图，可接受其他用户PK，获胜奖励88荷点、失败则扣除宝藏道具；',
-  '3、系统显示附近接受PK的用户及携带宝藏道具信息，用户可任选发起PK，胜利则获得对方宝藏道具，失败扣除68荷点。'
+  '1、帐户拥有相同年货道具数量不低于2个，荷气值不低于68；',
+  '2、将自己拥有的年货道具分享到地图，可接受其他用户PK，获胜奖励188荷气值、失败则扣除年货道具；',
+  '3、系统显示附近接受PK的用户及携带年货道具信息，用户可任选发起PK，胜利则获得对方年货道具，失败扣除188荷气值。'
 ]
 export default function ActivityRules(props: IActivityRulesProps) {
   const bgRule = getResource('bgPkRule')

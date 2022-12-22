@@ -51,10 +51,10 @@ export default function PkResultModal(props: IPkResultModalProps) {
     if (condition === 1) {
       awardText = `宝藏道具-${award.awardPatch.patchName}`
       if (award.awardValue || award.givenPoints) {
-        awardText += `,${award.awardValue || award.givenPoints}荷点`
+        awardText += `,${award.awardValue || award.givenPoints}荷气值`
       }
     } else if (condition === 0) {
-      awardText = `-${award.minusPoints}荷点`
+      awardText = `-${award.minusPoints}荷气值`
     }
     return awardText
   }

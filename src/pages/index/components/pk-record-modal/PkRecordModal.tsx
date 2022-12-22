@@ -109,7 +109,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
                     (record.pkResult == 2 && record.failMinusValue > 0)) && (
                     <View className="line">
                       {record.pkResult == 1 && record.winValue > 0 && (
-                        <Text>+{record.winValue}个荷点</Text>
+                        <Text>+{record.winValue}个荷气值</Text>
                       )}
                       {record.pkResult == 2 &&
                         Number(record.failMinusValue) > 0 && (
@@ -123,7 +123,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
               ))}
             {!hasHistory && (
               <View className="no-data">
-                暂无发起游戏PK，发起游戏PK，胜利可获得荷点奖励！
+                暂无发起游戏PK，发起游戏PK，胜利可获得荷气值奖励！
               </View>
             )}
           </ScrollView>
@@ -162,14 +162,14 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
                       {record.pkResult == 2 && record.failMinusPoints > 0 && (
                         <Text style="color: #E60012">
                           <Text>-</Text>
-                          {record.failMinusPoints}个荷点
+                          {record.failMinusPoints}个荷气值
                         </Text>
                       )}
                     </View>
                   )}
                   {record.pkResult == 1 && record.awardPoints > 0 && (
                     <View className="line">
-                      <View>+{record.awardPoints}个荷点</View>
+                      <View>+{record.awardPoints}个荷气值</View>
                     </View>
                   )}
                 </View>

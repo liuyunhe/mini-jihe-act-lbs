@@ -47,7 +47,7 @@ export default function PkRecordModal(props: IPkRecordModalProps) {
             }
           </ScrollView>
         }
-        { (!history || !history.length) && <View className='record-list no-data'>暂无荷包数据,挑战pk,有机会获得荷包、荷点值！</View>}
+        { (!history || !history.length) && <View className='record-list no-data'>暂无荷包数据,挑战pk,有机会获得荷包、荷气值！</View>}
         <Image 
           src={btnHedian.path} 
           className='hedian-btn' 

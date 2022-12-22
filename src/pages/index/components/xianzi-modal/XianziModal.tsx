@@ -26,18 +26,18 @@ export default function XianziModal(props: IXianziModalProps) {
   const tips = [
     {
       type: 'normal',
-      text: '少侠请留步，小仙是荷花仙子~\n'
+      text: '少侠请留步，小仙是荷花仙子～\n'
     },
     {
       type: 'normal',
       text:
-        '盛夏欢享如约至，集合赏荷赢好礼！欢迎来到【采荷寻芳踪】，少侠你看，这一路上遍地都是荷包与荷花，还请你跟着小仙一起，探寻他们踪迹吧~也许还会发现珍贵的'
+        '岁岁年年春节至，新春礼享送福利，集合集荷赢好礼！欢迎来到【好韵年年】，少侠你看，这一路上遍地都是荷包，还请你跟着小仙一起，探寻他们踪迹吧~这些荷包里也许还藏着珍贵的'
     },
     // { type: 'normal', text: '你看这一路上遍地都是荷花，少侠请跟着小仙一起，探寻荷花的踪迹吧~\n' },
     // { type: 'normal', text: '这些荷花里也许还藏着珍贵的' },
     // { type: 'keyword', text: '荷包' },
     // { type: 'normal', text: '和' },
-    { type: 'keyword', text: '荷点' },
+    { type: 'keyword', text: '荷气值' },
     { type: 'normal', text: '哦，在后面的游戏里一定有大用处，快快收好！' }
   ]
   // const xianziTips = [

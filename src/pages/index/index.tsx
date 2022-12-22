@@ -141,7 +141,7 @@ export default function Index(props: any) {
   } = useHistory({ showModal, clearModal })
   // 牛气值
   const { points, getPoint } = usePoints()
-  // 荷点
+  // 荷气值
   const { hedian, getHedian, setHedian } = useHedian()
   // 荷包
   // const { hebao, getHebao, setHebao } = useHebao()
@@ -292,11 +292,11 @@ export default function Index(props: any) {
               getHedian(true)
             }}
           >
-            <text>荷点：</text>
+            <text>荷气值：</text>
             <text>{points.hedian}</text>
           </View>
           {/* <View className='niuqi-value-box' onClick={() => { showModal('pkHebaoModal'); getPoint() }}>
-            <text>荷点：</text>
+            <text>荷气值：</text>
             <text>{points.hebao}</text>
           </View> */}
         </View>
@@ -396,7 +396,7 @@ export default function Index(props: any) {
         shopInfo={modal.jinniuModal.shopInfo}
         onClose={() => hideModal('jinniuModal')}
       />
-      {/* 荷点 */}
+      {/* 荷气值 */}
       <PkHedianModal
         show={modal.pkHedianModal.show}
         condition={modal.pkHedianModal.condition}
