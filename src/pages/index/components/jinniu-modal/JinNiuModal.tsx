@@ -52,7 +52,9 @@ export default function XinchunModal(props: IJinNiuModalProps) {
   return (
     <Popup show={props.show} onClose={props.onClose} showClose={false}>
       <View
-        className={`jinniu-modal-container ${props.condition === 2 && 'award'}`}
+        className={`jinniu-modal-container ${(props.condition === 2 ||
+          props.condition === 3) &&
+          'award'}`}
       >
         <Image src={bgPath} className="modal-bg" mode="widthFix"></Image>
         <View

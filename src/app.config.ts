@@ -9,7 +9,7 @@ export default {
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: '好运年华',
+    navigationBarTitleText: '好韵年年',
     navigationBarTextStyle: 'black'
   },
   permission: {

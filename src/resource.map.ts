@@ -53,7 +53,7 @@ export const IMAGE_RESOURCES = {
   btnMyPkActive: 'lbs-btn-my-pk-active1.png',
   btnMyChallenge: 'lbs-btn-my-challenge1.png',
   btnMyChallengeActive: 'lbs-btn-my-challenge-active1.png',
-  bgChooseGestrue: 'lbs-bg-choose-guesture1.png',
+  bgChooseGestrue: 'lbs-bg-choose-guesture.png',
   iconRadio: 'lbs-icon-radio1.png',
   iconRadioActive: 'lbs-icon-radio-active1.png',
   iconWechat: 'lbs-icon-wechat.png',
